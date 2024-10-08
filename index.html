@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/034cb4ac8f.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="512*512" href="android-chrome-192x192.png">
+</head>
+<body>
+    <div class="container"> 
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter the Location" class="input-box" id="locationInput">
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+            </div>
+        </div>
+        <div class="weather-body"> 
+            <img src="/Weather-photo/clear.png" alt="Weather Image" class="weather-img" id="weatherImg">
+            <div class="weather-box">
+                <p class="temperature" id="temperature">0<sup>°C</sup></p>
+                <p class="description" id="description">Clear</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                   <i class="fa-solid fa-droplet"></i>
+                   <div class="text">
+                    <span id="humidity">45%</span>
+                    <p>Humidity</p>
+                   </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                     <span id="windSpeed">12 Km/H</span>
+                     <p>Wind Speed</p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

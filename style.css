@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: LightPink;
+}
+
+.container {
+    width: 400px;
+    background-color: rgb(245, 214, 219);
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input {
+    width: 80%;
+    font-size: 20px;
+    background-color: #FFC0CB;
+    text-transform: capitalize;
+    padding: 12px 16px;
+    border-radius: 14px;
+}
+
+.search-box button {
+    width: 46px;
+    height: 46px;
+    color: rgb(69, 67, 67);
+    background-color: #FFC0CB;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer; 
+}
+
+.search-box button:hover {
+    color: rgb(17, 16, 16);
+    background-color: #DB7093;
+}
+
+.weather-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px; /* Added margin for spacing */
+}
+
+.weather-body img {
+    width: 30%; 
+    height: auto; 
+}
+
+.weather-box {
+    padding: 20px;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.weather-box .temperature {
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+
+.weather-box .temperature sup {
+    font-size: 13px;
+    position: absolute;
+    font-weight: 600;
+    top: -10px;
+}
+
+.weather-box .description {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.weather-details {
+    text-transform: capitalize;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 20px; 
+}
+
+.humidity, .wind {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    text-align: center; }
+
+.weather-details i {
+    font-size: 37px;
+}
+
+.weather-details .text {
+    margin-top: 5px; 
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.text span {
+    font-size: 18px;
+    font-weight: 700;
+}
